@@ -55,6 +55,7 @@ impl AmmConfig {
             try_from_account_info_mut::<AmmConfig>(amm_pda)
         }?;
 
+        current_state.init = 1;
         current_state.bump = bump;
         current_state.owner = data.owner;
 

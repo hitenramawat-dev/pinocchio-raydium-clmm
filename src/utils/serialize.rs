@@ -5,8 +5,6 @@ use crate::error::CustomError;
 
 
 
-
-
 pub trait DataLen {
     const LEN: usize;
 }
